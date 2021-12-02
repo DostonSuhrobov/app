@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
-import { Link } from 'react-router'
-import Login from './Login'
+import { Redirect, Route, Switch } from "react-router";
+
+import Login from "./Login"
 
 import './App.css'
 
@@ -48,8 +49,8 @@ export default function Signup() {
 
             <div className="clearfix">
             <button type="button" onClick={register}>Sign Up</button>
-            {/* <button type="button" onClick={register}>Sign Up</button> */}
-            <Link to="login"> Or Login</Link>
+             <button type="button">Login</button> 
+
 
             </div>
         </div>
